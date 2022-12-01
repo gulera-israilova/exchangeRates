@@ -4,7 +4,7 @@ import swaggerUI from "swagger-ui-express";
 import {specs} from "./utils/swaggerOptions.js";
 import cors from "cors";
 
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
 const app = express();
 app.use(express.json());
 app.use(cors());
