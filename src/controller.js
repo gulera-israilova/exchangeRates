@@ -8,7 +8,7 @@ class controller {
         } catch (e) {
             console.log(e);
             res.status(400).json({
-                message: 'Todo save error',
+                message: 'Failed to return data',
             });
         }
     }
